@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import './App.scss';
+import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <section className="flex min-w-full flex-1 flex-col dark:bg-gray-900">
+      <section className="flex min-w-full flex-1 flex-col bg-neutral-100 dark:bg-gray-900">
         <div className="container mx-auto flex flex-1 flex-col items-center justify-center px-4 py-6 align-middle">
           <div className="mb-8 flex gap-8">
             <a
@@ -40,16 +40,16 @@ function App() {
           <h1 className="mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-5xl font-bold text-transparent">
             Vite + React + Tailwind
           </h1>
-          <div className="rounded-lg border border-gray-700 bg-gray-800 p-8 text-center shadow-xl">
+          <div className="rounded-lg bg-white p-8 text-center dark:border dark:border-gray-700 dark:bg-gray-800 dark:shadow-xl">
             <button
               onClick={() => setCount((count) => count + 1)}
-              className="mb-4 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
+              className="mb-4 rounded-lg bg-blue-600 px-6 py-3 font-semibold transition-colors hover:bg-blue-700 dark:text-white"
             >
               count is {count}
             </button>
-            <p className="text-gray-300">
+            <p className="dark:text-gray-300">
               Edit{' '}
-              <code className="rounded bg-gray-700 px-2 py-1 text-blue-300">
+              <code className="rounded px-2 py-1 text-blue-300 dark:bg-gray-700">
                 src/App.tsx
               </code>{' '}
               and save to test HMR
