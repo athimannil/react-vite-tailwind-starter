@@ -5,7 +5,7 @@ const Footer = () => {
         <p>
           Made with ❤️ by{' '}
           <a
-            className="text-white! hover:underline!"
+            className="text-blue-500 hover:underline"
             href="https://www.athimannil.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -13,8 +13,8 @@ const Footer = () => {
             Athimannil
           </a>
         </p>
-        <span className="hover:underline">
-          &copy; {new Date().getFullYear()} Starter Kit &mdash; All rights
+        <span>
+          &copy; {new Date().getFullYear()} TutorView &mdash; All rights
           reserved.
         </span>
       </div>
